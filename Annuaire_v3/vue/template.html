@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title><?= $titre ?></title>   <!-- Élément spécifique -->
+    <meta name="description" content="Annuaire des employés">
+    <link rel="stylesheet" href="style/annuaire.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="style/logo.png">RivRun SA</div>
+        <nav>  
+            <ul>
+                <li><a href="index.php?action=Accueil"> Accueil</a></li>
+                <li><a href="index.php?action=Login"> Administrateur</a></li>
+                <li><a href="index.php?action=lister"> Employé</a></li>
+                <li><a href=""> Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section> 
+    <h1><strong><?= $titre ?></strong></h1>  <!-- Élément spécifique -->
+    </section>
+    <section id="pageContent">
+        <?= $contenu ?>  <!-- Élément spécifique -->
+    </section>
+    <footer>
+    <p>&copy; BTS SIO | Lycée Pierre Poivre</a>
+    </footer>
+</body>
+</html>
